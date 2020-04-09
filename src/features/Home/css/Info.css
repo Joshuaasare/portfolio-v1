@@ -1,0 +1,198 @@
+/**
+ * @Author: Joshua Asare <joshuaasare>
+ * @Date:   2019-08-20 14:45:26
+ * @Last modified by:   joshuaasare
+ * @Last modified time: 2019-08-27 05:38:41
+ */
+
+.info {
+  clip-path: ellipse(100% 55% at 50% 42%);
+  background-color: #171c28;
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4rem;
+}
+
+.info__button-container {
+  margin-top: 3rem;
+}
+
+.info .row.info-row {
+  height: 100%;
+}
+
+.info .col-1-of-2.info-col {
+  height: 100%;
+}
+
+.info .col-1-of-2.info-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.info__emoji {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.info__image-container {
+  height: 35rem;
+  width: 35rem;
+}
+
+.info__text-container {
+}
+
+.info__text-container--main {
+}
+
+.info__text-container--main > span {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 4rem;
+}
+
+.resume-button {
+  padding: 1.4rem 4rem 1.4rem 4rem;
+  display: inline-block;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+  color: #171c28;
+}
+
+.resume-button:hover {
+  color: #171c28;
+  background-color: #eee;
+}
+
+.info__text-container--sub {
+  margin-top: 2rem;
+}
+
+.info__text-container--sub > span {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.info_tick {
+  animation: floatingButton 0.5s linear none infinite;
+}
+
+.blink {
+  animation: blink-animation 0.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+}
+
+.blink2 {
+  animation: blink-animation 0.5s steps(5, start) 0.5s infinite;
+  -webkit-animation: blink-animation 0.5s steps(5, start) 0.5s infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes floatingButton {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*BIG DESKTOP*/
+@media (max-width: 112.5em) {
+}
+
+/*TAB LANDSCAPE*/
+@media (max-width: 75em) {
+}
+/*TAB PORTRAIT*/
+@media (max-width: 56.25em) {
+  .info {
+    padding-top: 2rem;
+    height: 60rem;
+  }
+}
+
+/*PHONE*/
+@media (max-width: 37.5em) {
+  .info {
+    height: auto;
+    padding: 4rem 4rem 4rem 4rem;
+  }
+
+  .info .col-1-of-2.info-col {
+    height: 45rem;
+  }
+
+  .info .col-1-of-2.info-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+  }
+
+  .info__image-container {
+    margin-top: -4rem;
+  }
+
+  .info__text-container--main > span {
+    text-align: center;
+  }
+
+  .info__text-container--sub > span {
+    text-align: center;
+  }
+
+  .info__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info__emoji {
+    transform: rotate(90deg);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .info__text-container--sub > span {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .info__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

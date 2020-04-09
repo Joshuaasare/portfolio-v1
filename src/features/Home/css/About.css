@@ -1,0 +1,106 @@
+.about {
+  position: relative;
+  min-height: 40rem;
+  margin: 0rem 0 0 0;
+  padding: 6rem 7rem 0 7rem;
+}
+
+.about__title {
+  display: flex;
+  align-items: center;
+}
+
+.about__title .name {
+  font-size: 3rem;
+  display: inline-block;
+  margin-right: 4rem;
+  font-weight: 600;
+}
+
+.about__title .line {
+  display: inline-block;
+  background-color: var(--color-yellow-dark);
+  height: 0.2rem;
+  flex: 1;
+}
+
+.about__info {
+  margin: 1rem 0 -1rem 0;
+}
+
+.about__image-container {
+  height: 35rem;
+  width: 35rem;
+}
+
+.about__info .para {
+  margin: 1.3rem 0 0 0;
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.about__skills {
+  margin: 2rem 0 2rem 0;
+}
+
+.about__skill-icon {
+}
+
+.about__skill {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 0 0;
+}
+
+.about__skill span {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/*BIG DESKTOP*/
+@media (max-width: 112.5em) {
+}
+
+/*TAB LANDSCAPE*/
+@media (max-width: 75em) {
+}
+/*TAB PORTRAIT*/
+@media (max-width: 56.25em) {
+  .about__info .para {
+    margin: 1.3rem 0 0 0;
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+/*PHONE*/
+@media (max-width: 37.5em) {
+  .about__info .para {
+    margin: 1.3rem 0 0 0;
+    display: inline-block;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+
+  .about {
+    position: relative;
+    min-height: 40rem;
+    margin: 3rem 0 0 0;
+    padding: 2rem 3rem 0 3rem;
+  }
+
+  .about__skill span {
+    margin-left: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+}
+
+/*EXTRA PHONE OPTIMIZATION*/
+@media (max-width: 25em) {
+}

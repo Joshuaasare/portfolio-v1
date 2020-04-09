@@ -1,0 +1,68 @@
+/**
+ * @Author: Joshua Asare <joshuaasare>
+ * @Date:   2019-08-23 01:18:11
+ * @Last modified by:   joshuaasare
+ * @Last modified time: 2019-09-06 20:30:59
+ */
+.footer {
+  background-color: var(--color-purple-dark);
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 3rem;
+  padding: 3rem 0 3rem 0;
+}
+
+.footer__header span {
+  margin-left: 1rem;
+}
+
+.footer__media {
+  padding: 1rem 0 3rem 0;
+  display: flex;
+}
+
+.footer__media-item {
+  cursor: pointer;
+}
+
+.footer__media-item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.footer__media-icon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--color-yellow-dark) !important;
+}
+
+@media (max-width: 112.5em) {
+}
+
+/*TAB LANDSCAPE*/
+@media (max-width: 75em) {
+}
+/*TAB PORTRAIT*/
+@media (max-width: 56.25em) {
+}
+
+/*PHONE*/
+@media (max-width: 37.5em) {
+}
+
+/*EXTRA PHONE OPTIMIZATION*/
+@media (max-width: 25em) {
+  .footer {
+    padding: 0 2rem 0 2rem;
+  }
+}

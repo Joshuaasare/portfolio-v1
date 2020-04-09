@@ -1,0 +1,253 @@
+/**
+ * @Author: Joshua Asare <joshuaasare>
+ * @Date:   2019-08-20 14:51:26
+ * @Last modified by:   joshuaasare
+ * @Last modified time: 2019-09-06 13:31:18
+ */
+.work {
+  /* background-color: var(--color-pink-coral-reef-light); */
+  position: relative;
+  margin: 3rem 0 3rem 0;
+  padding: 6rem 20rem 3rem 20rem;
+}
+
+.work__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work__header .name {
+  font-size: 3rem;
+  display: inline-block;
+  margin-left: 4rem;
+  font-weight: 600;
+}
+
+.work__header .line {
+  display: inline-block;
+  background-color: var(--color-yellow-dark);
+  height: 0.2rem;
+  flex: 1;
+}
+
+.work__row {
+}
+
+.col-2-of-3.work-content {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 0 0;
+}
+
+.col-1-of-3.work-nav {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work__navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.work .nav-item {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  cursor: pointer;
+  border-left: 3px solid rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.work .nav-item:hover {
+  border-left-color: var(--color-yellow-dark);
+  background-color: var(--color-yellow-dark-low);
+}
+
+.work .nav-item-active {
+  border-left-color: var(--color-yellow-dark);
+  background-color: var(--color-yellow-dark-low);
+}
+
+.work .exp {
+}
+
+.work .exp__header {
+}
+
+.work .exp__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.work .exp__comp {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color-yellow-dark);
+}
+
+.work .exp__duration {
+  padding: 1rem 0 1rem 0;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.work .exp__content {
+}
+
+.work .exp__skill {
+  margin: 1.3rem 0 1.3rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.work .exp__skill span {
+  margin-left: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 2.2rem;
+  margin-top: -0.5rem;
+}
+
+.work .exp__skill-icon {
+}
+
+/*BIG DESKTOP*/
+@media (max-width: 112.5em) {
+}
+
+/*TAB LANDSCAPE*/
+@media (max-width: 75em) {
+}
+/*TAB PORTRAIT*/
+@media (max-width: 56.25em) {
+  .work {
+    /* background-color: var(--color-pink-coral-reef-light); */
+    position: relative;
+    margin: 3rem 0 3rem 0;
+    padding: 6rem 5rem 6rem 5rem;
+  }
+}
+
+/*PHONE*/
+@media (max-width: 37.5em) {
+  .work {
+    /* background-color: var(--color-pink-coral-reef-light); */
+    position: relative;
+    margin: 3rem 0 3rem 0;
+    padding: 6rem 3rem 6rem 3rem;
+  }
+
+  .col-2-of-3.work-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0 0 0;
+  }
+
+  .work__navigation {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 3rem 0 3rem 0;
+    overflow-x: auto;
+  }
+
+  .col-1-of-3.work-nav {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .work .nav-item {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border-left-color: transparent;
+    width: 100%;
+    border-left: none;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .work .nav-item:hover {
+    border-bottom-color: var(--color-yellow-dark);
+    border-left-color: transparent;
+  }
+
+  .work .nav-item-active {
+    border-bottom-color: var(--color-yellow-dark);
+    border-left-color: transparent;
+  }
+
+  .work .exp__title {
+    font-weight: 600;
+    font-size: 1.9rem;
+  }
+
+  .work .exp__comp {
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: var(--color-yellow-dark);
+  }
+
+  .work .exp__duration {
+    padding: 1rem 0 1rem 0;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .work .exp__duration {
+    padding: 1rem 0 1rem 0;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .work .exp__skill {
+    margin: 1.3rem 0 1.3rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .work .exp__skill span {
+    margin-left: 0.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+
+  .work .exp__skill-icon {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 0.2rem !important;
+  }
+
+  .work__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .work__header .name {
+    font-size: 3rem;
+    display: inline-block;
+    margin-left: 0;
+    font-weight: 600;
+  }
+
+  .work__header .line {
+    display: none;
+  }
+}
+
+/*EXTRA PHONE OPTIMIZATION*/
+@media (max-width: 25em) {
+}
