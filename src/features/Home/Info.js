@@ -36,9 +36,8 @@ const Info = () => {
               </div>
               <div className="info__text-container--sub">
                 <span>
-                  I'm Joshua Asare, a full Stack developer based in Accra,
-                  Ghana. Discover my background, projects and ways to contact
-                  me!
+                  I'm Joshua Asare, a Software Engineer based in Accra, Ghana.
+                  Discover my background, projects and ways to contact me!
                 </span>
               </div>
             </div>
