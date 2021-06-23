@@ -9,8 +9,7 @@ import './css/Work.css';
 import { Ikon } from '../_shared/components';
 import { experience } from '../_shared/constants';
 
-const Work = (props) => {
-  const {} = props;
+const Work = () => {
   const [activeWork, setActiveWork] = useState(Object.keys(experience)[0]);
 
   function renderWorkNav() {

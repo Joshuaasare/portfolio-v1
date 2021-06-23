@@ -12,17 +12,14 @@ import {
 } from 'body-scroll-lock';
 
 const useBodyScroll = (isElementActive, targetRef) => {
-  useEffect(
-    () => {
-      isElementActive
-        ? disableBodyScroll(targetRef.current)
-        : enableBodyScroll(targetRef.current);
-      return () => {
-        clearAllBodyScrollLocks();
-      };
-    },
-    [isElementActive],
-  );
+  useEffect(() => {
+    isElementActive
+      ? disableBodyScroll(targetRef.current)
+      : enableBodyScroll(targetRef.current);
+    return () => {
+      clearAllBodyScrollLocks();
+    };
+  }, [isElementActive, targetRef]);
   return [];
 };
 

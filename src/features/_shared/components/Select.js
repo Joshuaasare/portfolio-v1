@@ -5,11 +5,9 @@
  * @Last modified time: 2019-08-31 22:49:59
  */
 import React from 'react';
-import PropTypes from 'prop-types';
 import './css/Select.css';
 
-const Select = (props) => {
-  const {} = props;
+const Select = () => {
   return (
     <div className="select">
       <select>{}</select>

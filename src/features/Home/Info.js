@@ -8,15 +8,9 @@ import React from 'react';
 import './css/Info.css';
 import { connect } from 'react-redux';
 import Lottie from 'react-lottie';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-import { GenericButton } from '../_shared/components';
-import { useScrollToRef } from '../_shared/hooks';
 import { animations, files } from '../_shared/assets';
 
-const Info = (props) => {
-  const { qualityRef } = props;
-  const [onClick] = useScrollToRef();
-
+const Info = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
