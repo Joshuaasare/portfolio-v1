@@ -35,9 +35,7 @@ const GenericButton = (props) => {
       backgroundColor: props.backgroundColor,
     };
   }
-  const {
- text, width, height, textColor, onClick, fluid 
-} = props;
+  const { text, width, height, textColor, onClick, fluid } = props;
   return (
     <div
       style={{

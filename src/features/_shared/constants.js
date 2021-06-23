@@ -4,7 +4,8 @@ export const constants = {
   },
   validators: {
     /* eslint-disable no-useless-escape */
-    email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    email:
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     phone: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/im,
   },
   app: {
@@ -20,10 +21,23 @@ export const constants = {
 };
 
 export const experience = {
+  ColorElephant: {
+    title: 'Senior Software Engineer - React-Native',
+    company: ' @ ColorElephant Internacional Lda',
+    link: 'https://colorelephant.com',
+    duration: 'May 2020 - Present   |   Porto, Portugal',
+    tasks: [
+      'Led a team of 3 front-end engineers to develop the mobile client of an AI-driven custom financial analysis tool.',
+      'Developed a offline/online political crowd support application with react and react-native using realm offline mobile database for data persistence.',
+      'Set-up pipelines with automated unit and integration tests in bitbucket for safe deployments.',
+      'Implemented a comprehensive over-the-air updates automated pipeline for non-native updates in mobile applications using Microsoft Appcenter and code push.',
+    ],
+  },
   Asqii: {
-    title: 'Senior Front-end Engineer',
+    title: 'Front-end Engineer',
     company: ' @ Asqii LLC',
-    duration: 'May 2019 - Present   |   Remote',
+    link: 'https://asqii.com',
+    duration: 'May 2019 - May 2020   |   Remote',
     tasks: [
       'Develop hybrid apps for Android and IOS platforms using react-native.',
       'Implement backend systems mainly using Node JS, typescript, and MySQL database.',
@@ -35,6 +49,7 @@ export const experience = {
   ISTC: {
     title: 'Software Development Support',
     company: ' @ Intercity STC Coaches',
+    link: 'https://stc.gov.gh',
     duration: 'May - Sept 2018 | Accra (GH)',
     tasks: [
       'Built a web application for the administration of the technical services department using HTML, CSS and jQuery.',
@@ -46,6 +61,7 @@ export const experience = {
   Schooldesk: {
     title: 'Front-end Engineer',
     company: ' @ Schooldesk',
+    link: 'https://schooldesk.cc',
     duration: 'May - October 2017 | Kumasi (GH)',
     tasks: [
       'Collaborated with a team of 6 made up of interns and engineers to develop a school management system for elite schools.',
