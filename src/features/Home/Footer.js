@@ -8,11 +8,9 @@ import React from 'react';
 // import PropTypes from 'prop-types'
 import './css/Footer.css';
 
-import { Icon, Ikon } from '../_shared/components';
+import { Ikon } from '../_shared/components';
 
-const Footer = (props) => {
-  const {} = props;
-
+const Footer = () => {
   return (
     <div className="footer">
       <div className="row">

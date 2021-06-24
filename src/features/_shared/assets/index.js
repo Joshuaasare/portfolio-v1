@@ -6,7 +6,6 @@ import mmda from './images/mmda.jpg';
 import dev from './animations/dev.json';
 import program from './animations/program.json';
 import resume from './animations/Joshua_resume.pdf';
-import logo from './images/Josh_logo.png';
 import exp1 from './images/exp1.png';
 
 export const images = {

@@ -9,12 +9,11 @@ import './css/Work.css';
 import { Ikon } from '../_shared/components';
 import { experience } from '../_shared/constants';
 
-const Work = (props) => {
-  const {} = props;
+const Work = () => {
   const [activeWork, setActiveWork] = useState(Object.keys(experience)[0]);
 
   function renderWorkNav() {
-    return Object.keys(experience).map((key, index) => {
+    return Object.keys(experience).map((key) => {
       return (
         <div
           onClick={() => setActiveWork(key)}
@@ -33,10 +32,18 @@ const Work = (props) => {
     return (
       <div className="exp">
         <div className="exp__header">
-          <div>
-            <span className="exp__title">{data.title}</span>
+          <span className="exp__title">{data.title}</span>
+          <a href={data.link} className="exp__link">
             <span className="exp__comp">{data.company}</span>
-          </div>
+            <span className="exp__link-icon">
+              <Ikon
+                name="external-link"
+                size={1.3}
+                style={{ margin: 0, padding: 0 }}
+                color="orange"
+              />
+            </span>
+          </a>
           <div className="exp__duration">{data.duration}</div>
         </div>
 

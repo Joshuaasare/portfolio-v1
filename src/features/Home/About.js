@@ -32,8 +32,8 @@ const About = (props) => (
         <div className="about__info">
           <span className="para">
             I'm a software engineer who loves working on challenging problems,
-            cracking them into simpler solutions. I build scalable backend and
-            frontend applications, using state of the art technologies with
+            cracking them into simpler solutions. I build scalable frontend and
+            mobile applications, using state of the art technologies with
             security in mind.
           </span>
 

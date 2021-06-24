@@ -63,7 +63,8 @@
   padding: 0 1rem 0 1rem;
   cursor: pointer;
   border-left: 3px solid rgba(0, 0, 0, 0.1);
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 1.5rem;
   transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -92,6 +93,22 @@
   font-weight: 600;
   font-size: 1.5rem;
   color: var(--color-yellow-dark);
+  margin-right: 0;
+  transition: margin-right linear 0.1s;
+}
+
+.work .exp__link {
+}
+
+.work .exp__comp:hover {
+  margin-right: 0.5rem;
+  transition: margin-right linear 0.1s;
+}
+
+.work .exp__link-icon {
+  display: inline-block;
+  height: 2rem;
+  padding: 0.5rem 0.5rem 0 0.7rem !important;
 }
 
 .work .exp__duration {
